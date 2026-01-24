@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+}
+main h1 {
+    align-self: center;
+    margin-top: 8em;
+}
+section#sobre, section#programacao {
+    padding: 1em;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    border-radius: 5px;
+    border-bottom: 1px solid var(--colorblack);
+}
+.partsSobre {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+section#sobre {
+    background-color: #FFC3FF;
+}
+section#programacao {
+    background-color: var(--colorAmareloSuave);
+    align-items: flex-start;
+}
+.diasProgramacao {
+    display: flex;
+    flex-flow: column nowrap;
+    align-self: flex-start;
+}
+section#sobre > h2, section#programacao > h2 {
+    font-family: var(--fontTitulos);
+    margin-bottom: 1rem;
+}
+section#programacao > h2 {
+    align-self: center;
+}
+
+section#sobre p, section#programacao p{
+    text-align: justify;
+    text-indent: 2em;
+    margin: 1em 0 1em 0;
+    line-height: 2em;
+}
+
+section#sobre img {
+    width: 80%;
+}
+
+.diasProgramacao {
+    margin-left: 1em;
+}
+
+.diasProgramacao > h3 {
+    align-self: flex-start;
+    margin: 1em 0 1em 0;
+}
+
+div#inscricao {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+div#inscricao > p {
+    margin-bottom: 0em;
+}
+#botaoInscrever {
+    align-self: center;
+    background-color: var(--colorRoxoLilas);
+    padding: 1em;
+    font-size: 1.3em;
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.295);
+    border-radius: 1em;
+    border: 1px solid #0000004d;
+    margin: 2em 0;
+    transition: 0.3s font-size ease-in-out;
+}
+
+#botaoInscrever:hover {
+    font-size: 1.5em;
+}
+
+aside#patrocinio {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding-bottom: 3em;
+}
+
+aside#patrocinio > h3 {
+    margin: 1em 0;
+}
+
+div#logoInstitutos {
+    margin-top: 1.5em;
+    width: 70%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+@media screen and (min-width: 710px) {
+    section#sobre img {
+        width: 400px;
+    }
+}
+@media screen and (min-width: 992px) {
+    section#sobre, section#programacao {
+        padding: 1em;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        border-radius: 5px;
+        border-bottom: 1px solid var(--colorblack);
+    }
+
+    .partsSobre {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+
+    .partsSobre p {
+        width: 55%;
+    }
+
+    section#sobre img {
+        width: 400px;
+    }
+}

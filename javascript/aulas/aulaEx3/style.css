@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font: normal normal 1rem arial;
+    background-color: rgb(95, 153, 230);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    
+}
+
+h1#letscont {
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.322);
+    margin-bottom: 3rem;
+    font-size: 3rem;
+}
+
+article#contableBox {
+    background-color: aliceblue;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.39);
+    
+    width: 400px;
+}
+
+div.boxForm {
+    margin-bottom: 1rem;
+}
+
+div.boxForm > label {
+    font-weight: bolder;
+}
+
+div.boxForm > input {
+    padding: 0.2rem;
+}
+
+#buttonSubmit {
+    padding: 0.5rem;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+#msgResultado {
+    margin-top: 2rem;
+}
+
+footer {
+    color: aliceblue;
+    font: normal normal 1em arial;
+    margin-top: 2em;
+    text-shadow: 1px 1px 3px  rgba(0, 0, 0, 0.363);
+}

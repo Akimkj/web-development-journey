@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area {
+            font: normal 20pt "Times New Roman";
+            background-color: green;
+            color: white;
+            width: 200px;
+            height: 100px;
+            border-radius: 10px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="mudarCorFundo()">
+        interaja. . .
+    </div>
+    <script>
+        var clickAtivo = false
+        function mudarCorFundo(){
+            if (clickAtivo == false) {
+                window.document.body.style.backgroundColor = "red"
+                clickAtivo = true
+            }
+            else {
+                window.document.body.style.backgroundColor = "white"
+                clickAtivo = false
+            }
+        }
+    </script>
+</body>
+</html>

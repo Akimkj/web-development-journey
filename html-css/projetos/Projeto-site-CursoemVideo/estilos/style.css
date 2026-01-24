@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+:root {
+    --cor1: #37006B;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    
+}
+
+body {
+    background-color: rgb(206, 174, 236);
+}
+
+main {
+    background-color: white;
+    min-width: 320px;
+    max-width: 680px;
+    margin: auto;
+    padding: 1.2em;
+    padding-bottom: 4em;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.438);
+    border-radius: 5px;
+}
+
+p {
+    text-align: justify;
+}
+
+.imagemLado {
+    float: right;
+    padding-left: 3em;
+    padding-bottom: 4em;
+}
+
+#tituloPrincipal {
+    color: var(--cor1);
+    font: normal bolder 2em Helvetica, Arial, sans-serif;
+}
+
+.topicos {
+    color: var(--cor1);
+    font: normal bolder 1.5em Helvetica, Arial, sans-serif;
+}
+
+a {
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+.video {
+    position: relative;
+    height: 0px;
+    background-color: var(--cor1);
+    padding-bottom: 59%;
+}
+
+.video > iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.voltar {
+    padding-top: 1.3em;
+}

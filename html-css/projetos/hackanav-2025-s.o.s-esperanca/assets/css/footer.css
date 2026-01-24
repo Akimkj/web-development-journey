@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+footer {
+    display: flex;
+    flex-flow: column;
+    background-color: rgb(192, 255, 192);
+    align-self: flex-end;
+    padding: 1em;
+}
+
+#credits {
+    align-self: center;
+}

@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+footer {
+    background-color: var(--colorAzulClaro);
+    padding: 1em 1em 0 1em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    border-radius: 5px 5px 0 0;
+}
+
+footer h3 {
+    align-self: flex-start;
+}
+div#sobrenos img{
+    width: 50%;
+}
+
+
+div#contato > p {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+

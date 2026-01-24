@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+header {
+    width: 100%;
+}
+
+#navBarMobile {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background-color: #238d69;
+    padding: 1rem;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.438);
+    align-items: center;
+}
+
+#iconmenu {
+    font-size: 2rem;
+    padding: 3px;
+}
+#iconmenu:hover {
+    background-color: rgba(0, 0, 0, 0.11);
+    border-radius: 50%;
+}
+
+#areaMenuMobile {
+    display: none;
+    z-index: 1;
+}
+
+#itensmenuMobile {
+    list-style-type: none;
+    width: 100%;
+}
+
+#itensmenuMobile li a {
+    display: flex;
+    padding: 0.5em;
+    border: 1px solid black;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+}
+
+#itensmenuMobile li a:hover {
+    background-color: #2a614e;
+    color: white;
+}

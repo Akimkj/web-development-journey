@@ -1,0 +1,188 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+@font-face {
+    font-family: 'Vogue';
+    src: url(../fontes/Vogue.ttf) format(truetype);
+}
+
+:root {
+    --gradienteInstagram: linear-gradient(to bottom, #7D0BFE, #FC02D8, #FE0096, #F81F27, #FE6404, #FE8D01, #FDC300);
+    --fonteTituloPrincipal: 'Vogue', serif;
+    --fonteTitulosSecundarios: "Oswald", sans-serif;
+    --fontesGenericas: verdana, arial, sans-serif;
+    --fonteDeTexto: "Crimson Pro", serif;
+    --fonteMono: 'Courier New', Courier, monospace;
+}
+
+* {
+    margin: 0px;
+    padding: 0px; 
+}
+html, body {
+    min-height: 100vh;
+    background-color: black;
+    font-size: 1em;
+}
+#tituloPrincipal {
+    display: inline-block;
+    font-size: 5em;
+    font-family: var(--fonteTituloPrincipal);
+    font-weight: bold;
+    font-style: normal;
+    font-variant: small-caps;
+    color: white;
+    padding: 15px;
+    background-color: rgba(131, 130, 130, 0.726);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+}
+
+.image {
+    background-color: white;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 50vh;
+    padding-bottom: 50vh;
+    position: relative;
+    box-shadow: inset 3px 2px 6px 0px rgba(0, 0, 0, 0.719);
+}
+
+#img01 {
+    background-image: url(../imagens/terra.jpg);
+    background-position: center center;
+}
+
+#img02 {
+    background-image: url(../imagens/pexels-pixabay-2150.jpg);
+    background-position: center center;
+}
+
+#img03 {
+    background-image: url(../imagens/foto-nasa-satelite.jpg);
+    background-position: right top;
+}
+
+#img04 {
+    background-image: url(../imagens/planets.jpg);
+    background-position: center center;
+}
+
+.texto {
+    font-family: var(--fonteDeTexto);
+    color: white;
+    padding-top: 10vh;
+    padding-bottom: 6em;
+    background-color: rgb(105, 105, 105);
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+.texto h2 {
+    font-family: var(--fonteTitulosSecundarios);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.603);
+    font-size: 3em;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+.texto p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    text-align: justify;
+    text-indent: 2em;
+    padding-bottom: 1.5em;
+}
+
+ul {
+    list-style-position: inside;
+    padding-left: 3.5em;
+}
+
+li {
+    padding-bottom: 1em;
+    line-height: 1.5em;
+    font-size: 1.3em;
+}
+
+main a {
+    font-weight: bold;
+    color: rgb(143, 7, 143);
+}
+
+main a:hover {
+    color: yellow;
+    transition: 1s;
+}
+
+.primeiraPalavra::before {
+    content: 'A';
+    font-family: var(--fonteTituloPrincipal);
+    font-size: 5em;
+}
+
+#referencias {
+    color: white;
+    padding-bottom: 5em;
+    background-color: rgb(105, 105, 105);
+}
+
+#referencias h2 {
+    font-family: var(--fonteTitulosSecundarios);
+    font-size: 2em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.603);
+    padding-bottom: 0.2em;
+    padding-left: 1.2em;
+}
+
+#referencias p {
+    padding-top: 0.5em;
+    font-family: var(--fonteDeTexto);
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+    text-align: justify;
+}
+
+footer {
+    color: white;
+    margin: auto;
+}
+
+div {
+    display: inline-block;
+    max-width: 55vw;
+}
+
+footer h2 {
+    padding-top: 1.5em;
+    padding-left: 2em;
+    padding-bottom: 10px;
+}
+
+footer > div > p {
+    padding-left: 3em;
+    padding-bottom: 2em;
+    text-align: justify;
+}
+
+nav {
+    display: inline-block;
+    padding-left: 25vw;
+    max-height: 50vw;
+}
+
+footer > aside > p {
+    font-family: var(--fonteMono);
+    text-align: center;
+    padding-bottom: 5px;
+}

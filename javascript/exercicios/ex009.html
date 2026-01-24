@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montanha Russa</title>
+    <style>
+        #mostrarResultado {
+            display: flex;
+            align-items: center;
+        }
+        #resultado {
+            width: 20em;
+            height: 25px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pode entrar na montanha russa?</h1>
+    <p>
+        <label for="iidade">Idade: </label>
+        <input type="number" name="idade" id="iidade">
+    </p>
+    <p>
+        <label for="ialtura">Altura: </label>
+        <input type="number" name="altura" id="ialtura" step="0.01">
+    </p>
+    <input type="button" value="Submeter" onclick="entrarMontanha()">
+    <div id="mostrarResultado">
+        <h2>Resultado:</h2> <div id="resultado"></div>
+    </div>
+    <script src="ex009.js"></script>
+</body>
+</html>

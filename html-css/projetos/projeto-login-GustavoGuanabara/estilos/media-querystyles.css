@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+/*para tablets*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    #login {
+        width: 80vw;
+        height: 300px;
+    }
+
+    #backImg {
+        width: 25vw;
+        height: 100%;
+        padding: 40px;
+        float: left;
+    }
+
+    #forms {
+        width: 55vw;
+        height: 100%;
+        float: right;
+    }
+}
+
+/*para pc's, desktops e telas grandes*/
+@media screen and (min-width: 992px) {
+    #login {
+        width: 900px;
+        height: 342px;
+    }
+
+    #backImg {
+        width: 400px;
+        height: 100%;
+        float: right;
+    }
+
+    #forms {
+        width: 500px;
+        height: 100%;
+        float: left;
+    }
+
+    #titulologin {
+        font-size: 2em;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+    #forms > p {
+        font-size: 1em;
+        text-align: left;
+        padding-bottom: 10px;
+    }
+}

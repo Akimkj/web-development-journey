@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!--Meta dados-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Empresa de eventos focada na luta pelos direitos LGBTQIA+.">
+    <meta name="author" content="DiversiVida Eventos">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="inclusão, confraternização, orgulho, direitos, amar, LGBT, LGBTQIA+, diversidade">
+    <meta name="og:title" content="I Confraternização de conscientização dos direitos LGBTQIA+ | DiversiVida Eventos">
+    <meta name="og:description" content="Evento com objetivo de levantar a causa LGBT.">
+    <!--Título da página-->
+    <title>I Confraternização de conscientização dos direitos LGBTQIA+</title>
+    <!--Importando material symbols-->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+    <!--Estilos-->
+    <link rel="shortcut icon" href="assets/imgs/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/styles/settings.css">
+    <link rel="stylesheet" href="assets/styles/all.css">
+    <link rel="stylesheet" href="assets/styles/header.css">
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="assets/styles/footer.css">
+</head>
+<body onresize="mudarTamanho()">
+    <header>
+        <!--Navbar para mobile-->
+        <nav id="navBarOne">
+            <h2 id="tituloEmpresa">DiversiVida Eventos</h2>
+            <span class="material-symbols-outlined" id="iconMenu" onclick="clickMenu()">menu</span>
+            <menu id="areamenu">
+                <ul id="itensmenu">
+                    <li><a href="index.html" hreflang="pt-br" onclick="clickMenu()"><span class="material-symbols-outlined">local_activity</span> Evento</a></li>
+                    <li><a href="index.html#programacao" onclick="clickMenu()"><span class="material-symbols-outlined">calendar_month</span>Programação</a></li>
+                    <li><a href="inscrever.html" hreflang="pt-br" onclick="clickMenu()"><span class="material-symbols-outlined">check_circle</span>Inscrições</a></li>
+                </ul>
+            </menu>
+        </nav>
+        <!--Navbar para outros dispositivos-->
+        <nav id="navBarTwo">
+            <h2 id="tituloEmpresa">DiversiVida Eventos</h2>
+            <menu id="areamenu">
+                <ul id="itensmenu">
+                    <li><a href="index.html" hreflang="pt-br" onclick="clickMenu()"><span class="material-symbols-outlined">local_activity</span> Evento</a></li>
+                    <li><a href="#programacao" onclick="clickMenu()"><span class="material-symbols-outlined">calendar_month</span>Programação</a></li>
+                    <li><a href="inscrever.html" hreflang="pt-br" onclick="clickMenu()"><span class="material-symbols-outlined">check_circle</span>Inscrições</a></li>
+                </ul>
+            </menu>
+        </nav>
+    </header>
+    <main>
+        <h1>Em desenvolvimento !</h1>
+    </main>
+    <script src="assets/js/mobilemenu.js"></script>
+</body>

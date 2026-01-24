@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador com JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1 id="letscont">Bora Contar</h1>
+        <article id="contableBox">
+            <form method="post">
+                <div class="boxForm">
+                    <label for="inumInicio">Inicío: </label>
+                    <input type="number" name="numInicio" id="inumInicio">
+                </div>
+                <div class="boxForm">
+                    <label for="inumFim">Fim: </label>
+                    <input type="number" name="numFim" id="inumFim">
+                </div>
+                <div class="boxForm">
+                    <label for="inumincr">Passo: </label>
+                    <input type="number" name="numincr" id="inumincr">
+                </div>
+                <input type="button" value="Contar" id="buttonSubmit" onclick="contar()">
+            </form>
+            <p id="msgResultado">Preparando a contagem...</p>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; Mika Marques - Pelo Curso em Vídeo</p>
+    </footer>
+    <script src="component.js"></script>
+</body>
+</html>

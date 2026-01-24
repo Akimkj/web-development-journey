@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!--Meta dados-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Empresa de eventos focada na luta pelos direitos LGBTQIA+.">
+    <meta name="author" content="DiversiVida Eventos">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="inclusão, confraternização, orgulho, direitos, amar, LGBT, LGBTQIA+, diversidade">
+    <meta name="og:title" content="Inscrição | I Confraternização de conscientização dos direitos LGBTQIA+ | DiversiVida Eventos">
+    <meta name="og:description" content="Inscrição para evento com objetivo de levantar a causa LGBT.">
+    <!--Título da página-->
+    <title>Inscrição | I Confraternização de conscientização dos direitos LGBTQIA+</title>
+    <!--Importando material symbols-->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+    <!--Estilos-->
+    <link rel="shortcut icon" href="assets/imgs/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/styles/settings.css">
+    <link rel="stylesheet" href="assets/styles/all.css">
+    <link rel="stylesheet" href="assets/styles/header.css">
+    <link rel="stylesheet" href="assets/styles/mainForms.css">
+    <link rel="stylesheet" href="assets/styles/footer.css">
+</head>
+<body onresize="mudarTamanho()">
+    <header>
+        <!--Navbar para mobile-->
+        <nav id="navBarOne">
+            <h2 id="tituloEmpresa">DiversiVida Eventos</h2>
+            <span class="material-symbols-outlined" id="iconMenu" onclick="clickMenu()">menu</span>
+            <menu id="areamenu">
+                <ul id="itensmenu">
+                    <li><a href="home.html" hreflang="pt-br" onclick="clickMenu()"><span class="material-symbols-outlined">home</span> Home</a></li>
+                    <li><a href="index.html#programacao" onclick="clickMenu()"><span class="material-symbols-outlined">calendar_month</span>Programação</a></li>
+                    <li><a href="index.html" hreflang="pt-br" onclick="clickMenu()"><span class="material-symbols-outlined">local_activity</span>Evento</a></li>
+                </ul>
+            </menu>
+        </nav>
+        <!--Navbar para outros dispositivos-->
+        <nav id="navBarTwo">
+            <h2 id="tituloEmpresa">DiversiVida Eventos</h2>
+            <menu id="areamenu">
+                <ul id="itensmenu">
+                    <li><a href="home.html" hreflang="pt-br" onclick="clickMenu()"><span class="material-symbols-outlined">home</span> Home</a></li>
+                    <li><a href="#programacao" onclick="clickMenu()"><span class="material-symbols-outlined">calendar_month</span>Programação</a></li>
+                    <li><a href="index.html" hreflang="pt-br" onclick="clickMenu()"><span class="material-symbols-outlined">local_activity</span>Evento</a></li>
+                </ul>
+            </menu>
+        </nav>
+    </header>
+    <main>
+        <section class="form-inscricao">
+            <h2>Participe do evento!</h2>
+            <p>Faça sua Inscrição para participar I Confraternização de conscientização dos direitos LGBTQIA+ e lutar pelos seus direitos!</p>
+            <form class="form-inscricao-form" method="post">
+              <fieldset>
+                <div class="container">
+                  <input type="text" id="name" name="name" placeholder="Seu Nome" required>
+                </div>
+              </fieldset>
+      
+              <fieldset>
+                <div class="container">
+                  <input type="tel" id="tel" name="tel" placeholder="Seu Telefone" required>
+                </div>
+      
+                <div class="container">
+                  <input type="email" name="email" id="email" placeholder="Seu email" autocomplete="email" required>
+                </div>
+              </fieldset>
+              <div class="button-form">
+                <button>Inscreva-se</button>
+              </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div id="sobrenos">
+            <h3>Sobre nós</h3>
+            <a href="home.html" hreflang="pt-br" target="_self" rel="next"><img src="assets/imgs/logo-DiversiVidaEventos.png" alt="logo da empresa DiversiVida Eventos"></a>
+        </div>
+        <div id="contato">
+            <h3>Contatos</h3>
+            <p><span class="material-symbols-outlined">call</span> 98 9000-0000</p>
+            <p><span class="material-symbols-outlined">mail</span> diversiVida@gmail.com</p>
+            <p><span class="material-symbols-outlined">photo_camera</span> @diversividaeventos</p>
+        </div>
+    </footer>
+    <script src="assets/js/mobilemenu.js"></script>
+</body>

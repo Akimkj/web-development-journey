@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(224, 125, 224);
+            height: 90vh;
+            color: white;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+        #button {
+            background-color: rgb(233, 233, 133);
+            display: inline-block;
+            padding: 1em;
+            border-radius: 5px;
+            border: 2px solid black;
+            color: black;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>DOM: Primeiros passos</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div>
+        <div id="button">Clique em mim</div>
+    </div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName("p")[1]
+        corpo.style.backgroundColor = "pink"
+        p1.style.color = "black" // aplica estilo
+    </script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+header {
+    display: flex;
+    flex-flow: column nowrap;
+
+}
+nav#navBarTwo {
+    display: none;
+    color: var(--colorwhite);
+    justify-content: space-between;
+    border-bottom: 3px solid var(--colorRoxoLilas);
+    align-items: center;
+    background-color: #c57ec9ef;
+    padding: 1em;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+}
+nav#navBarOne {
+    color: var(--colorwhite);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid var(--colorRoxoLilas);
+    align-items: center;
+    background-color: #c57ec9ef;
+    padding: 1em;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+}
+h2#tituloEmpresa {
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.315);
+    background-image: linear-gradient(to right, #DD2B35, #E56B1D, #FEFE7E, #199053, #0E3DC3, #5C0A62);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+span#iconMenu {
+    font-size: 2em;
+    font-weight: 700;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+span#iconMenu:hover {
+    cursor: pointer;
+    background-color: #1d1d1d1e;
+}
+
+#areamenu {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+    top: 4.6em;
+    left: -1px;
+    background-color: #552757f3;
+    overflow-x: hidden;
+}
+
+#itensmenu {
+    list-style-type: none;
+    height: 90%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#itensmenu .material-symbols-outlined {
+    transition: font-size 0.3s ease-in-out;
+    font-size: 2rem;
+}
+
+#areamenu a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font: normal bold 2rem var(--fontTitulos);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.363);
+    transition: font-size 0.3s ease-in-out;
+}
+
+#areamenu a:hover {
+    font-size: 3.5rem;
+}
+
+
+div#apresentacao {
+    margin-top: 7em;
+    padding: 1em;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+div#apresentacao h1 {
+    color: var(--colorAzulSereno);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.445);
+    margin-bottom: 0.5em;
+}
+
+div#apresentacao p {
+    align-self: self-start;
+}
+
+div#apresentacao img {
+    margin-top: 1.5em;
+}
+
+@media screen and (min-width: 768px) {
+    nav#navBarOne {
+        display: none;
+    }
+    nav#navBarTwo {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #areamenu {
+        display: block;
+        position: static;
+        height: auto;
+        width: 50%;
+        overflow-y: hidden;
+        z-index: 1;
+        text-align: inherit;
+        top: 0;
+        background-color: #ffffff00;
+        
+       
+    }
+    #itensmenu {
+        list-style-type: none;
+        height: auto;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #areamenu a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        font: normal bold 1.2rem var(--fontTitulos);
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.363);
+    }
+
+    #areamenu a:hover {
+        font-size: 1rem;
+    }
+    #itensmenu .material-symbols-outlined {
+        transition: font-size 0.3s ease-in-out;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    div#apresentacao {
+        flex-flow: row nowrap;
+        margin-top: 5em;
+    }
+}

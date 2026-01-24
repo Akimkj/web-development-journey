@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+html, body {
+    background-color: var(--colorRosaBebe);
+}
+main {
+    display: flex;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    margin-top: 9em;
+    padding: 2em;
+    border-radius: 1em;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.219);
+}
+@media screen and (min-width: 768px){
+    main {
+        width: 70%;
+    }
+}
+
+section.form-inscricao > p {
+    margin-bottom: 1em;
+}
+
+fieldset {
+    display: flex;
+    border: 0;
+}
+
+div.container {
+    margin-bottom: 1em;
+    flex: auto;
+    display: flex;
+}
+
+form.form-inscricao-form input {
+    margin-right: 10px;
+    flex:auto;
+    border: 1px solid var(--colorVerdeClaro);
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    background-color: var(--colorVerdeSuave);
+}
+
+div.button-form {
+    float: right;
+    margin-right: 1rem;
+}
+
+div.button-form > button {
+    padding: 0.5em 1em;
+    color: white;
+    background-color: #246b26;
+    font: bold normal 1.2em var(--fontgeral);
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 6em;
+    position: relative;
+    bottom: 0;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 900px) {
+    div.button-form {
+        float: left;
+    }
+    fieldset {
+        display: block;
+        border: 0;
+    }
+}

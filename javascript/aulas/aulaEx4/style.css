@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font: normal normal 1rem arial;
+    background-color: rgb(95, 153, 230);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    
+}
+
+h1 {
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.322);
+    margin-bottom: 3rem;
+    font-size: 3rem;
+}
+
+article#boxTabuada {
+    background-color: aliceblue;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.39);
+    
+    width: 400px;
+}
+
+form#selectNumber {
+    margin-bottom: 2em;
+}
+
+form#selectNumber > label {
+    font-weight: bold;
+}
+
+form#selectNumber > input#iNumberTab {
+    padding: 0.4em;
+    width: 8em;
+}
+
+form#selectNumber > input#submitButton {
+    padding: 0.3em;
+    font-size: 1em;
+}
+
+
+
+footer {
+    color: aliceblue;
+    font: normal normal 1em arial;
+    margin-top: 2em;
+    text-shadow: 1px 1px 3px  rgba(0, 0, 0, 0.363);
+}
