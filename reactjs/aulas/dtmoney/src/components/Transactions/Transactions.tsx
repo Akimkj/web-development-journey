@@ -1,11 +1,13 @@
 import clsx from 'clsx'
 import { RowTrasactionsProps } from '../../types/types';
+import SearchForm from './SearchForm';
 
 export default function Trasactions({type}: RowTrasactionsProps) {
 
     
     return (
         <section className="w-[90%] max-w-7xl mt-10 ml-auto mr-auto">
+            <SearchForm/>
             <table className="w-full border-separate border-spacing-x-0 border-spacing-y-2">
                 <tbody>
                     <tr className="bg-gray-800 w-full">

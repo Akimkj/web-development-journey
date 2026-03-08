@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { geistSans, geistMono } from "@/src/UI/fonts/font";
 import "@/src/UI/globals.css";
-import { Header } from "../components/Header";
+import { Header } from "../components/Header/Header";
 
 export const metadata: Metadata = {
   title: "Create Next App",

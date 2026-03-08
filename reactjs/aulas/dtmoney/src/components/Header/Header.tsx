@@ -1,5 +1,7 @@
 import Image from "next/image";
 import logoImg from "@/src/assets/logo.svg"
+import * as Dialog from "@radix-ui/react-dialog"
+import NewTransacionModal from "@/src/components/Header/Modal"
 
 export function Header() {
     return (
@@ -11,9 +13,13 @@ export function Header() {
                     height={40}
                     alt="Logo da dtMoney"
                 />
-                <button className="h-50px bg-green-600 pt-3 pb-3 pl-5 pr-5 border-0 rounded-md font-bold text-white cursor-pointer hover:bg-green-800 trasition ease-in-out duration-300">
-                    Nova transação
-                </button>
+
+                <Dialog.Root>
+                    <Dialog.Trigger className="h-50px bg-green-600 pt-3 pb-3 pl-5 pr-5 border-0 rounded-md font-bold text-white cursor-pointer hover:bg-green-800 trasition ease-in-out duration-300">
+                        Nova transação
+                    </Dialog.Trigger>
+                    <NewTransacionModal/>
+                </Dialog.Root> 
             </div>
         </header>
     );
