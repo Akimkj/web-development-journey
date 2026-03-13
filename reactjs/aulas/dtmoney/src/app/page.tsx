@@ -1,11 +1,12 @@
 import { Summary } from "../components/Summary";
-import Trasactions from "../components/Transactions/Transactions";
-
+import Transactions from "../components/Transactions/Transactions";
+import { Header } from "../components/Header/Header";
 export default function Home() {
   return (
     <div>
+      <Header/>
       <Summary/>
-      <Trasactions type={"outcome"}/>
+      <Transactions/>
     </div>
   );
 }

@@ -1,0 +1,44 @@
+{
+  "transactions": [
+    {
+      "id": 1,
+      "description": "Desenvolvimento de site",
+      "type": "income",
+      "category": "Vendas",
+      "price": 14000,
+      "createdAt": "2026-03-08T22:23:32.347Z"
+    },
+    {
+      "id": 2,
+      "description": "Hamburguer",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 60,
+      "createdAt": "2026-03-08T22:23:32.347Z"
+    },
+    {
+      "description": "afaf",
+      "price": 235,
+      "category": "teste",
+      "type": "outcome",
+      "createdAt": "2026-03-13T17:14:39.877Z",
+      "id": 3
+    },
+    {
+      "description": "Bolsa Capes",
+      "price": 700,
+      "category": "Projeto de bolsa",
+      "type": "income",
+      "createdAt": "2026-03-13T17:21:09.013Z",
+      "id": 4
+    },
+    {
+      "description": "app",
+      "price": 10000,
+      "category": "Venda",
+      "type": "income",
+      "createdAt": "2026-03-13T17:08:28.342Z",
+      "id": 5
+    }
+  ]
+}
